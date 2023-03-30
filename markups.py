@@ -11,5 +11,6 @@ backmenu = KeyboardButton('1. Вернуться в начало')
 backerMenu = ReplyKeyboardMarkup(resize_keyboard=True).add(backmenu)
 
 # ---Back1 Menu ---
-# backmenu1 = KeyboardButton('1.Вернуться в начало')
-# backerMenu1 = ReplyKeyboardMarkup(resize_keyboard=True).add(backmenu1)
+backmenu1 = KeyboardButton('1. Вернуться в начало')
+backmenu2 = KeyboardButton('Поделиться номером телефона', request_contact=True)
+backerMenu1 = ReplyKeyboardMarkup(resize_keyboard=True).add(backmenu1).add(backmenu2)
